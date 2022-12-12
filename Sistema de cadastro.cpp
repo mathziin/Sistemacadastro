@@ -82,6 +82,7 @@ void pesquisa (){
 	char emailPesquisa[50];
 	int i;
 	do{
+	system("cls");
 		printf("\nDigite 1 para pesquisar por CPF: ");
 		scanf("%d", &op);
 		switch(op){
