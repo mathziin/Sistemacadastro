@@ -58,7 +58,7 @@
 	void cadastro(){
 		static int linha;
 		do{	
-		
+		system("cls");
 		printf("\nDigite o nome: ");
 		scanf("%s", &nome [linha]);
 		printf("\nDigite o cpf:");
@@ -72,6 +72,7 @@
 		printf("\nDigite 1 para continuar ou outro valor para sair ");
 		scanf("%d", &op);
 		linha++;
+		
 	}while(op==1);
 	
 } //Fim da função cadastro
@@ -93,17 +94,6 @@ void pesquisa (){
 					printf("\nNome: %s\nCpf: %d\nEmail: %s\nCargo: %s\n Idade: %d", nome[i], cpf[i], email[i], cargo[i], idade[i]);
 						
 				}
-			}
-			break;
-		case 2:
-			
-			
-				printf("\nDigite o E-MAIL: ");
-				scanf("%s", &emailPesquisa);
-				for (i=0; i<SIZE;i++){
-					if(strcmp(email[i], emailPesquisa)){
-					printf("\nNome: %s\nCpf: %d\nEmail: %s\nCargo: %s\n Idade: %d", nome[i], cpf[i], email[i], cargo[i], idade[i]);
-		    	}
 			}
 			break;
 		default:
